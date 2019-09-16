@@ -2,13 +2,28 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
 
 }
 
 label:hover,
 span:hover,
 button:hover {
-	font-weight: bold;
+	background: #F5F5F5;
+}
+
+label:focus,
+span:focus,
+button:focus {
+	outline:none;
+}
+
+a {
+	text-decoration: none;
+}
+
+*:focus {
+	outline:none;
 }
 
 span {
@@ -25,11 +40,15 @@ button {
 }
 
 #logo {
-	width: 60px;
+	margin-left: -10em;
+	width: 200em;
+	height: 10em;
 }
 
 #title {
 	background: lightblue;
+  background: -webkit-linear-gradient(to right, #d8ecf3, lightblue);
+  background: linear-gradient(to right, #d8ecf3, lightblue);
 	padding: 20px;
 }
 
@@ -38,12 +57,12 @@ button {
 	font-family: sans-serif;
 	text-align: center;
 	color: white;
-	font-family: 'Fredoka One', cursive;;
+	font-family: 'Fredoka One', cursive;
 }
 
 .signin,
 #search-stock-div {
-	width: 50%;
+	width: 80%;
 	margin: 30px auto;
 	text-align: center;
 }
@@ -59,9 +78,12 @@ button {
 
 
 #watchlists {
-	width: 75%;
+	width: 90%;
 	margin: 0 auto;
 	text-align: center;
+	background: WhiteSmoke;
+	border-radius:10px;
+	padding:10px;
 }
 
 #watchlists h3 {
@@ -75,7 +97,7 @@ button {
 	padding: 20px;
 	background: lightblue;
 	color: white;
-	display: flex;
+	display: inline-block;
 	flex-direction: row;
 }
 
@@ -94,6 +116,10 @@ ul {
 	margin-right: 30%;
 }
 
+.delete-list:hover {
+	color: black;
+}
+
 
 #current-watchlist {
 	text-align: center;
@@ -102,14 +128,17 @@ ul {
 }
 
 #current-watchlist h2 {
+	margin-top: 2em;
 	padding: 10px 0;
 	background: lightblue;
 	color: white;
+	border-radius: 10px;
 }
 
 #listOfCurrentWatchlist {
 	background: lightblue;
 	margin: 10px 0;
+	border-radius: 10px;
 }
 
 #listOfCurrentWatchlist span {
@@ -140,13 +169,43 @@ ul {
 	border-radius: 30%;
 	font-size: 15px;
 	color: lightblue;
-	margin-top: 1px;
-  margin-right: 2px;
+	/*margin-top: 1px;*/
+  width: 2em;
+  position:relative;
+  top: -9em;
+  left: 30vw;
 }
 
 #exit-button:hover {
 	background-color: red;
 	color: white;
 	cursor: pointer
+}
+
+.logo {
+	border-radius:10px;
+}
+
+.web-link {
+	color: grey;
+}
+
+.img-exit {
+
+}
+
+#pop-up-stock-search * {
+	margin-bottom:1em;
+}
+
+.info {
+	display:inline-block;
+	border-radius:10px;
+	padding:20px;
+}
+
+.sign-out-ban {
+	display:flex;
+	background: WhiteSmoke;
 }
 
