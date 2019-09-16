@@ -98,19 +98,21 @@ static addStockToWatchList(watch_list_id, symbol) {
     let showedStockDiv = document.querySelector("#search-stock-div");
     showedStockDiv.innerHTML = `<div id="pop-up-stock-search">
     <div class="pop-up-stock-left">
-    <img src=${stockProfile.image}>
+    <div img-exit>
+      <img class="logo" src=${stockProfile.image}>
+      <button name="exit" id="exit-button">x</button>
+    </div>
     <h3>${stockProfile.companyName}</h3>
     <h4 id="ticker">${stockInfo.symbol}</h4>
     <p>Price: $${stockProfile.price}</p>
     <p class="info">Description: <br>${stockProfile.description}</p>
     <p class="info">Sector: ${stockProfile.sector}</p>
-    <a href=${stockProfile.website} target="_blank">Website</a> <br>
+    <a className="web-link" href=${stockProfile.website} target="_blank">Website</a> <br>
     <label for="add-stock">Add Stock to a Watchlist:</label>
     <select name="Add Stock to Watchlist" id="watchlist-select">
     </select>
     </div>
     <div class="pop-up-stock-right">
-    <button name="exit" id="exit-button">x</button>
     </div
     </div>`;
     let exitButton = showedStockDiv.querySelector('#exit-button');

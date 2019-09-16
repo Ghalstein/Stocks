@@ -47,8 +47,7 @@ SIGN_IN_DIV.addEventListener('submit', event => {
 		UserAdapter.createUser(input)
 		.then(WatchListAdapter.handleErrors)
 		.then(user => {
-			SIGN_IN_DIV.innerHTML = `Signed in as ${input}
-					<br><button id="signout">Sign out</button>
+			SIGN_IN_DIV.innerHTML = `<div class"sign-out-ban"> Signed in as ${input} <button id="signout">Sign out</button></div>
 					<div id="userDiv" data-id="${user.id}"></div>
 					<div id="search-stock-div">
 						<form id="search-stock">
@@ -88,8 +87,7 @@ SIGN_IN_DIV.addEventListener('submit', event => {
 			console.log(users)
 			for (user of users) {
 				if (user.name.toLowerCase() === input.toLowerCase()) {
-					SIGN_IN_DIV.innerHTML = `Signed in as ${input}
-					<br><button id="signout">Sign out</button>
+					SIGN_IN_DIV.innerHTML = `<div class"sign-out-ban"> Signed in as ${input} <button id="signout">Sign out</button></div>
 					<div id="userDiv" data-id="${user.id}"></div>
 					<div id="search-stock-div">
 						<form id="search-stock">
