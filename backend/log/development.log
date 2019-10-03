@@ -29508,3 +29508,10 @@ Processing by WatchListsController#show as */*
 Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for ::1 at 2019-09-15 21:13:35 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/garretthalstein/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/garretthalstein/.rvm/gems/ruby-2.6.1/gems/railties-5.2.3/lib/rails/templates/rails/welcome/index.html.erb (2.1ms)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
