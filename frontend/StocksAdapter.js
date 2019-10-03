@@ -1,8 +1,8 @@
 class StocksAdapter {
 
-	static baseUrl() {
-		return `http://localhost:3000`;
-	}
+  static baseUrl() {
+    return `http://localhost:3000`;
+  }
 
   static stockSysmbolListUrl() {
     return `https://financialmodelingprep.com/api/v3/company/stock/list`;
@@ -16,7 +16,7 @@ class StocksAdapter {
     return `https://financialmodelingprep.com/api/v3/stock/real-time-price/`
   }
 
-	static getHeaders(){
+  static getHeaders(){
     return {
       "Content-Type": "application/json",
       "Accept": "application/json",
