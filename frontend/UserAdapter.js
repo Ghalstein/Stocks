@@ -1,10 +1,10 @@
 class UserAdapter {
 
-	static baseUrl() {
-		return `http://localhost:3000/`;
-	}
+  static baseUrl() {
+    return `http://localhost:3000/`;
+  }
 
-	static getHeaders(){
+  static getHeaders(){
     return {
       "Content-Type": "application/json",
       "Accept": "application/json",
@@ -25,8 +25,8 @@ class UserAdapter {
   }
 
   static getUser(userId) {
-  	return fetch(this.baseUrl() + `users/${userId}`)
-  	.then(res => res.json());
+    return fetch(this.baseUrl() + `users/${userId}`)
+    .then(res => res.json());
   }
 
   static createUser(name) {
